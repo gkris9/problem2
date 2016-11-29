@@ -13,7 +13,7 @@ public class PerfectNumberImplTest extends TestCase {
 
 	@Test
 	public void testVerifyPerfectNumber() {
-		int number = 28;
+		int number = 6;
 		String result = perfectnumImpl.verifyPerfectNumber(number);
 		assertEquals(testPerfectNumber, result);
 
