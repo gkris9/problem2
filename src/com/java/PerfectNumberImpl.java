@@ -16,8 +16,8 @@ public class PerfectNumberImpl {
 
 			message = "not a perfect number";
 		}
-		
-		System.out.println(number+" is "+message);
+
+		System.out.println(number + " is " + message);
 		return message;
 
 	}
