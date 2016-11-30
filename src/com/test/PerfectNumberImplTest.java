@@ -1,6 +1,6 @@
 package com.test;
 
-import org.junit.Assert;
+import org.junit.Assert.*;
 import org.junit.Test;
 
 import com.java.PerfectNumberImpl;
@@ -9,14 +9,13 @@ import junit.framework.TestCase;
 
 public class PerfectNumberImplTest extends TestCase {
 
-	String testPerfectNumber = "perfect number";
 	PerfectNumberImpl perfectnumImpl = new PerfectNumberImpl();
 
 	@Test
 	public void testVerifyPerfectNumber() {
 		int number = 6;
 		boolean result = perfectnumImpl.verifyPerfectNumber(number);
-		Assert.assertTrue(result);
+		assertTrue(result);
 
 	}
 	
@@ -24,8 +23,16 @@ public class PerfectNumberImplTest extends TestCase {
 	public void testVerifyNotPerfectNumber() {
 		int number = 10;
 		boolean result = perfectnumImpl.verifyPerfectNumber(number);
-		Assert.assertFalse(result);
+		assertFalse(result);
 
+	}
+	
+	@Test
+	public void testNotInRangeValue()
+	{
+		int number = 0;
+		boolean result = perfectnumImpl.verifyPerfectNumber(number);
+		assertFalse(result);
 	}
 
 }
