@@ -10,14 +10,13 @@ public class PerfectNumberImpl {
 			}
 		}
 		if (tempVar == number) {
-
+			System.out.println("Given number is perfect Number");
 			flag = true;
 		} else {
-
+			System.out.println("Given number is not a perfect Number");
 			flag = false;
 		}
 
-		
 		return flag;
 
 	}
