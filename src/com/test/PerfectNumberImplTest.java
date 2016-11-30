@@ -1,5 +1,6 @@
 package com.test;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import com.java.PerfectNumberImpl;
@@ -14,8 +15,16 @@ public class PerfectNumberImplTest extends TestCase {
 	@Test
 	public void testVerifyPerfectNumber() {
 		int number = 6;
-		String result = perfectnumImpl.verifyPerfectNumber(number);
-		assertEquals(testPerfectNumber, result);
+		boolean result = perfectnumImpl.verifyPerfectNumber(number);
+		Assert.assertTrue(result);
+
+	}
+	
+	@Test
+	public void testVerifyNotPerfectNumber() {
+		int number = 10;
+		boolean result = perfectnumImpl.verifyPerfectNumber(number);
+		Assert.assertFalse(result);
 
 	}
 
