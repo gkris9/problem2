@@ -18,7 +18,7 @@ public class PerfectNumberImplTest extends TestCase {
 		assertTrue(result);
 
 	}
-	
+
 	@Test
 	public void testVerifyNotPerfectNumber() {
 		int number = 10;
@@ -26,10 +26,9 @@ public class PerfectNumberImplTest extends TestCase {
 		assertFalse(result);
 
 	}
-	
+
 	@Test
-	public void testNotInRangeValue()
-	{
+	public void testNotInRangeValue() {
 		int number = 0;
 		boolean result = perfectnumImpl.verifyPerfectNumber(number);
 		assertFalse(result);
