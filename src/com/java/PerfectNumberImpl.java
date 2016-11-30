@@ -9,9 +9,9 @@ public class PerfectNumberImpl {
 		{
 		
 		int tempVar = 0;
-		for (int i = 1; i <= number / 2; i++) {
-			if (number % i == 0) {
-				tempVar += i;
+		for (int counter = 1; counter <= number / 2; counter++) {
+			if (number % counter == 0) {
+				tempVar = tempVar + counter;
 				}
 			}
 			if (tempVar == number) {
