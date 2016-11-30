@@ -1,8 +1,8 @@
 package com.java;
 
 public class PerfectNumberImpl {
-	public String verifyPerfectNumber(int number) {
-		String message = "";
+	public boolean verifyPerfectNumber(int number) {
+		boolean flag = false;
 		int tempVar = 0;
 		for (int i = 1; i <= number / 2; i++) {
 			if (number % i == 0) {
@@ -11,14 +11,14 @@ public class PerfectNumberImpl {
 		}
 		if (tempVar == number) {
 
-			message = "perfect number";
+			flag = true;
 		} else {
 
-			message = "not a perfect number";
+			flag = false;
 		}
 
-		System.out.println(number + " is " + message);
-		return message;
+		
+		return flag;
 
 	}
 }
